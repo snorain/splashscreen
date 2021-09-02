@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Disable splashscreen
+sudo systemctl disable splashscreen.service
+sudo systemctl daemon-reload
+
+#Delete files
+sudo rm -rf /etc/splash
+sudo rm -rf /etc/systemd/system/splashscreen.service
+
+#Done
+echo "Done!"

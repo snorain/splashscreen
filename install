@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#Install vlc, pip3, and python3
+sudo apt install -y python3 vlc python3-pip python-dev
+
+#Install vlc-python
+sudo pip3 install python-vlc
+
+#Make dirs
+sudo mkdir -p /etc/sound
+
+#Copy files
+sudo cp -r etc/* /etc/
+sudo cp -r bin/* /bin/
+sudo cp -r LICENSE /etc/splash/
+
+#Change permissons
+sudo chmod 755 /etc/splash/*
+sudo chmod 755 /etc/systemd/system/splashscreen.service
+
+#Enable splashscreen
+sudo systemctl daemon-reload
+sudo systemctl enable splashscreen.service
+
+#Done
+echo "Done!"
