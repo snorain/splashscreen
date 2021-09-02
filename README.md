@@ -1,4 +1,4 @@
-# startupsound
+# Splashscreen
 This plays the snorain splash screen on startup.
 
 # How to install
