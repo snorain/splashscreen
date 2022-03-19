@@ -4,7 +4,7 @@ This plays the QuintOS splash screen on startup.
 # How to install
 Clone the git repo:
 ```sh
-git clone https://github.com/QuintOS/splashscreen
+git clone https://github.com/snorain/splashscreen
 ```
 cd into the main folder
 ```
